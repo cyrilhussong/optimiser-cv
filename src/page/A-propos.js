@@ -13,7 +13,7 @@ export default function Portfolio() {
             {/* Photo de profil */}
             <div className="col-md-4 text-center mb-4 mb-md-0">
               <img
-                src="/john-doe-about.jpg"
+                src={`${process.env.PUBLIC_URL}/john-doe-about.jpg`}
                 alt="John Doe"
                 className="img-fluid rounded-circle shadow"
                 style={{ maxWidth: '400px' }}

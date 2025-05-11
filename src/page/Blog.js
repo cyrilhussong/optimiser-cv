@@ -40,7 +40,7 @@ export default function Blog() {
       {/* Banner */}
       <div
         style={{
-          backgroundImage: 'url(/banner.jpg)',
+           backgroundImage: `url(${process.env.PUBLIC_URL}/banner.jpg)`, // Utilisation du dossier public
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           height: '100vh', /* Remplir toute la hauteur de l'écran */

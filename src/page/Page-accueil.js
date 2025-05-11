@@ -9,15 +9,13 @@ export default function Portfolio() {
         className="position-relative text-white text-center d-flex align-items-center justify-content-center"
         style={{
           height: '100vh',
-          backgroundImage: 'url(/hero-bg.jpg)',
+          backgroundImage: `url(${process.env.PUBLIC_URL}/hero-bg.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
       >
-        {/* Overlay noir semi-transparent */}
         <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}></div>
 
-        {/* Contenu */}
         <div className="position-relative z-1">
           <h1 className="display-4 fw-bold mb-3">Bonjour, je suis John Doe</h1>
           <h2 className="fs-4 mb-4">Développeur web full stack</h2>
@@ -25,7 +23,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about" className="container py-5">
         <div className="row g-5">
           <div className="col-md-6">
@@ -41,7 +38,7 @@ export default function Portfolio() {
             </p>
           </div>
           <div className="col-md-6">
-            <img src="/john-doe-about.jpg" alt="Développeur" className="img-fluid rounded shadow mb-4" />
+            <img src={`${process.env.PUBLIC_URL}/john-doe-about.jpg`} alt="Développeur" className="img-fluid rounded shadow mb-4" />
             <h4 className="mb-3">Mes compétences</h4>
             <SkillBar name="HTML5" percent={90} color="bg-danger" />
             <SkillBar name="CSS3" percent={80} color="bg-info" />
@@ -51,8 +48,6 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
-      
     </div>
   );
 }

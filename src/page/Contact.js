@@ -16,10 +16,10 @@ export default function Contact() {
       {/* Contact Section with Full Background and Blue Transparent Overlay */}
       <div
         style={{
-          backgroundImage: 'url("/contact-bg.jpg")',
+          backgroundImage: `url(${process.env.PUBLIC_URL}/contact-bg.jpg)`, // Utilisation du dossier public
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          height: '100vh', /* Remplir toute la hauteur de la fenêtre */
+          height: '100vh',
           padding: '60px 0',
           position: 'relative',
         }}

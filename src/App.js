@@ -15,6 +15,7 @@ import Blog from './page/Blog';
 import Contact from './page/Contact';
 import PageLegale from './page/Page-Legal';
 
+
 // Import du composant GitHubProfile
 import GitHubProfile from './components/GitHubProfile';
 
