@@ -1,13 +1,62 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #444;
+  background-color: #EEE;
+  
+}
+h1, h2, h3, h4 {
+  color: #1e1e1e;
+  font-weight: 600;
+
+}
+.produit{
+  background-color: blue;
+
+}
+/* Effet de survol sur les liens de navigation */
+footer a {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+footer a:hover, footer a:focus {
+  background-color: rgba(255, 255, 255, 0.8); /* Blanc avec transparence */
+  color: #343a40; /* Optionnel: changer la couleur du texte pour un meilleur contraste */
+  border-radius: 5px; /* Optionnel: arrondir les coins pour un effet plus élégant */
+}
+
+/* Effet de survol sur les icônes de la page "Services" */
+.service-icon {
+  transition: color 0.3s ease;
+}
+
+.service-icon:hover, .service-icon:focus {
+  color: #cde1f8; /* Changer la couleur de l'icône au survol */
+}
+
+/* Effet de survol sur le bouton "Retour en haut" */
+#scrollToTop {
+  background-color: #007bff; /* Couleur de fond par défaut */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#scrollToTop:hover, #scrollToTop:focus {
+  background-color: #298eff; /* Changer la couleur de fond au survol */
+  transform: scale(1.1); /* Agrandissement léger du bouton */
+  opacity: 1; /* Assurer une pleine opacité lors du survol */
+}
+
+/* Pour l'apparition du bouton "Retour en haut" */
+#scrollToTop {
+  display: none;
+  opacity: 0;
+}
+
+#scrollToTop.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+#mentionlegalessection h2 {
+  font-size: 85px; /* Ajuste la taille comme tu veux */
 }
