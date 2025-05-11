@@ -34,7 +34,7 @@ export default function Portfolio() {
             {/* Projet 1 */}
             <div className="col-md-4">
               <div className="card h-100 shadow-sm">
-                <img src={`${process.env.PUBLIC_URL}/images/fresh-food.jpg`} className="card-img-top" alt="Site Fresh Food" />
+                <img src={`${process.env.PUBLIC_URL}/fresh-food.jpg`} className="card-img-top" alt="Site Fresh Food" />
                 <div className="card-body">
                   <h5 className="card-title">Fresh Food</h5>
                   <p className="card-text">Réalisation d’un site avec commande en ligne.</p>
@@ -48,7 +48,7 @@ export default function Portfolio() {
             {/* Projet 2 */}
             <div className="col-md-4">
               <div className="card h-100 shadow-sm">
-                <img src={`${process.env.PUBLIC_URL}/images/restaurant-japonais.jpg`} className="card-img-top" alt="Site Restaurant Akira" />
+                <img src={`${process.env.PUBLIC_URL}/restaurant-japonais.jpg`} className="card-img-top" alt="Site Restaurant Akira" />
                 <div className="card-body">
                   <h5 className="card-title">Restaurant Akira</h5>
                   <p className="card-text">Réalisation d’un site vitrine.</p>
@@ -62,7 +62,7 @@ export default function Portfolio() {
             {/* Projet 3 */}
             <div className="col-md-4">
               <div className="card h-100 shadow-sm">
-                <img src={`${process.env.PUBLIC_URL}/images/espace-bien-etre.jpg`} className="card-img-top" alt="Site Espace bien-être" />
+                <img src={`${process.env.PUBLIC_URL}/espace-bien-etre.jpg`} className="card-img-top" alt="Site Espace bien-être" />
                 <div className="card-body">
                   <h5 className="card-title">Espace bien-être</h5>
                   <p className="card-text">Réalisation d’un site vitrine pour un praticien de bien-être.</p>
