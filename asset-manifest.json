@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/optimiser-cv/static/css/main.c199130e.css",
+    "main.css": "/optimiser-cv/static/css/main.d16f58c3.css",
     "main.js": "/optimiser-cv/static/js/main.fdda0e0c.js",
     "static/js/453.ef5113d2.chunk.js": "/optimiser-cv/static/js/453.ef5113d2.chunk.js",
     "static/media/fa-solid-900.ttf": "/optimiser-cv/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
@@ -12,12 +12,12 @@
     "static/media/fa-v4compatibility.ttf": "/optimiser-cv/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/optimiser-cv/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/optimiser-cv/index.html",
-    "main.c199130e.css.map": "/optimiser-cv/static/css/main.c199130e.css.map",
+    "main.d16f58c3.css.map": "/optimiser-cv/static/css/main.d16f58c3.css.map",
     "main.fdda0e0c.js.map": "/optimiser-cv/static/js/main.fdda0e0c.js.map",
     "453.ef5113d2.chunk.js.map": "/optimiser-cv/static/js/453.ef5113d2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c199130e.css",
+    "static/css/main.d16f58c3.css",
     "static/js/main.fdda0e0c.js"
   ]
 }
