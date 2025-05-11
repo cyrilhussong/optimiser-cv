@@ -40,7 +40,7 @@ export default function Blog() {
       {/* Banner */}
       <div
         style={{
-           backgroundImage: `url(${process.env.PUBLIC_URL}/banner.jpg)`, // Utilisation du dossier public
+          backgroundImage: `url(${process.env.PUBLIC_URL}/banner.jpg)`, // Utilisation du dossier public
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           height: '100vh', /* Remplir toute la hauteur de l'écran */
@@ -66,7 +66,11 @@ export default function Blog() {
           {articles.map((article, index) => (
             <div className="col-md-4 mb-4" key={index}>
               <div className="card h-100 shadow-sm">
-                <img src={article.image} className="card-img-top" alt={article.title} />
+                <img
+                  src={`${process.env.PUBLIC_URL}/${article.image}`}
+                  className="card-img-top"
+                  alt={article.title}
+                />
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{article.title}</h5>
                   <p className="card-text text-muted">Publié le {article.date}</p>
