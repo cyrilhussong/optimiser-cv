@@ -2,11 +2,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// Composants communs
+// Import des composants Header et Footer
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-// Pages
+// Import des pages
 import PageAccueil from './page/Page-accueil';
 import APropos from './page/A-propos';
 import Services from './page/Services';
@@ -15,12 +15,13 @@ import Blog from './page/Blog';
 import Contact from './page/Contact';
 import PageLegale from './page/Page-Legal';
 
-// Composant supplémentaire
+
+// Import du composant GitHubProfile
 import GitHubProfile from './components/GitHubProfile';
 
 function App() {
   return (
-    <Router basename="/optimiser-cv"> {/* adapte ce basename si tu déploies sur GitHub Pages */}
+    <Router>
       <Header />
       <main>
         <Routes>
@@ -31,6 +32,8 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/mentions-legales" element={<PageLegale />} />
+          
+          {/* Ajouter la route pour afficher le profil GitHub */}
           <Route path="/profil-github" element={<GitHubProfile />} />
         </Routes>
       </main>
