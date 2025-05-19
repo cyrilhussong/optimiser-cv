@@ -1,70 +1,76 @@
-# Démarrer avec Create React App
+# Optimiser CV - Projet React & Bootstrap
 
-Ce projet a été créé avec [Create React App](https://github.com/facebook/create-react-app).
+Ce projet est une application web responsive réalisée avec **React.js** et **Bootstrap 5**, suivant un cahier des charges précis. Il s'agit d'un site portfolio fictif pour un développeur nommé **John Doe**.
 
-## Scripts disponibles
+## 🎯 Objectifs pédagogiques
 
-Dans le répertoire du projet, vous pouvez exécuter les commandes suivantes :
+- Utiliser **React avec des composants fonctionnels** et les **hooks** (`useState`, `useEffect`)
+- Maîtriser l'intégration de **Bootstrap 5** pour le responsive design
+- Appliquer une **identité graphique complète** (polices, couleurs, favicon, logo)
+- Créer une **expérience utilisateur fluide** avec effets CSS et transitions
+- Afficher dynamiquement un **profil GitHub via l'API**
 
-### `npm start`
+---
 
-Lance l'application en mode développement.\
-Ouvrez [http://localhost:3000](http://localhost:3000) pour la voir dans votre navigateur.
+## 📄 Pages du site
 
-La page se rechargera à chaque modification.\
-Vous pourrez également voir les éventuelles erreurs de lint dans la console.
+- **Accueil** : image plein écran, titres, bouton vers "À propos", superposition noire (`rgba(0, 0, 0, 0.3)`)
+- **À propos** : présentation de John Doe, photo, compétences avec progress bars Bootstrap
+- **Services** : offres de service de John Doe avec effets au survol
+- **Réalisations** : portfolio de 3 projets en Bootstrap Cards
+- **Blog** : aperçu de 6 articles sous forme de Cards
+- **Contact** :
+  - Formulaire avec champs obligatoires : nom, e-mail, téléphone, sujet, message
+  - Coordonnées complètes
+  - Carte Google Map
+  - Image de fond avec overlay bleu transparent `rgba(0, 105, 255, 0.5)`
+- **Mentions légales** :
+  - Éditeur, hébergeur, crédits (Pixabay)
+  - Présentation en **accordéon Bootstrap**
+  - Non indexée par les moteurs de recherche
 
-### `npm test`
+---
 
-Lance le runner de tests en mode interactif avec surveillance des fichiers.\
-Consultez la section sur [lancer des tests](https://facebook.github.io/create-react-app/docs/running-tests) pour plus d'informations.
+## 🧩 Fonctionnalités techniques
 
-### `npm run build`
+- **Header** présent sur toutes les pages :
+  - Logo textuel
+  - Navigation responsive (hamburger menu)
+  - Lien actif en couleur distincte
+  - Liens en majuscules
+- **Footer** commun à toutes les pages avec :
+  - 4 colonnes : infos personnelles, navigation, réalisations, articles
+  - Réseaux sociaux cliquables (GitHub, Twitter, LinkedIn) ouvrant dans un nouvel onglet, non suivis pour le SEO
+  - Copyright
+  - Bouton "Retour en haut" visible uniquement au scroll (Vanilla JS)
+- **Effets visuels** :
+  - Hover sur les liens de navigation : blanc avec opacité 0.8
+  - Icônes des services : couleur `#cde1f8` au survol
+  - Bouton retour haut : fond `#298eff` au hover
+- **API GitHub** :
+  - Affichage dynamique des données de `https://api.github.com/users/github-john-doe`
 
-Construit l'application pour la production dans le dossier `build`.\
-Cela effectue une optimisation de React en mode production et améliore les performances du build.
+---
 
-Le build est minifié et les noms de fichiers incluent des hash.\
-Votre application est prête à être déployée !
+## 🛠️ Technologies utilisées
 
-Consultez la section sur [le déploiement](https://facebook.github.io/create-react-app/docs/deployment) pour plus d'informations.
+- [React](https://reactjs.org/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- [Font Awesome 6](https://fontawesome.com/)
+- [Google Fonts - Nunito Sans](https://fonts.google.com/specimen/Nunito+Sans)
+- [API GitHub Users](https://docs.github.com/en/rest/users/users)
 
-### `npm run eject`
+---
 
-**Attention : cette opération est irréversible. Une fois que vous avez `ejecté`, vous ne pouvez pas revenir en arrière !**
+## 📁 Lien du projet
 
-Si vous n'êtes pas satisfait des outils de build et des configurations par défaut, vous pouvez `ejecter` à tout moment. Cette commande supprimera la dépendance unique de build de votre projet.
+🔗 [https://github.com/cyrilhussong/optimiser-cv](https://github.com/cyrilhussong/optimiser-cv)
 
-À la place, elle copiera tous les fichiers de configuration et les dépendances transitoires (webpack, Babel, ESLint, etc.) directement dans votre projet, vous donnant ainsi un contrôle total sur eux. Toutes les commandes, à l'exception de `eject`, continueront à fonctionner, mais elles pointeront vers les scripts copiés afin que vous puissiez les ajuster. À ce stade, vous serez responsable de la configuration.
+---
 
-Vous n'êtes pas obligé d'utiliser `eject`. L'ensemble de fonctionnalités fourni est adapté aux déploiements de petite ou moyenne taille, et vous ne devriez pas vous sentir obligé d'utiliser cette fonctionnalité. Cependant, nous comprenons que cet outil ne serait pas utile si vous ne pouviez pas le personnaliser lorsque vous serez prêt.
+## 👨‍💻 Auteur
 
-## En savoir plus
+Cyril Hussong  
+Étudiant développeur web  
+Projet réalisé dans le cadre d’un devoir React & Bootstrap
 
-Vous pouvez en apprendre davantage dans la [documentation de Create React App](https://facebook.github.io/create-react-app/docs/getting-started).
-
-Pour apprendre React, consultez la [documentation React](https://reactjs.org/).
-
-### Découpage du code
-
-Cette section a été déplacée ici : [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyser la taille du bundle
-
-Cette section a été déplacée ici : [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Créer une Progressive Web App
-
-Cette section a été déplacée ici : [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Configuration avancée
-
-Cette section a été déplacée ici : [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Déploiement
-
-Cette section a été déplacée ici : [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` échoue à minifier
-
-Cette section a été déplacée ici : [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
