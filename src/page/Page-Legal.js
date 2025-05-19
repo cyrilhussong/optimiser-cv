@@ -17,13 +17,11 @@ export default function MentionsLegales() {
         padding: '40px',
       }}
     >
-      {/* Meta Tag pour empêcher l'indexation */}
       <Helmet>
         <meta name="robots" content="noindex, nofollow" />
         <title>Mentions légales</title>
       </Helmet>
 
-      {/* Titre */}
       <div className="container text-center mb-3">
         <h2 style={{ fontSize: '48px' }}>MENTIONS LÉGALES</h2>
         <hr
@@ -32,7 +30,6 @@ export default function MentionsLegales() {
         />
       </div>
 
-      {/* Accordéon - Section Mentions Légales */}
       <div style={{ width: '100%' }}>
         <div
           className="container bg-white p-4 rounded shadow"
@@ -47,6 +44,8 @@ export default function MentionsLegales() {
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapse1"
+                  aria-expanded="false"
+                  aria-controls="collapse1"
                 >
                   Éditeur du site
                 </button>
@@ -54,6 +53,7 @@ export default function MentionsLegales() {
               <div
                 id="collapse1"
                 className="accordion-collapse collapse"
+                aria-labelledby="heading1"
                 data-bs-parent="#accordionMentions"
               >
                 <div className="accordion-body">
@@ -71,6 +71,8 @@ export default function MentionsLegales() {
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapse2"
+                  aria-expanded="false"
+                  aria-controls="collapse2"
                 >
                   Hébergeur
                 </button>
@@ -78,6 +80,7 @@ export default function MentionsLegales() {
               <div
                 id="collapse2"
                 className="accordion-collapse collapse"
+                aria-labelledby="heading2"
                 data-bs-parent="#accordionMentions"
               >
                 <div className="accordion-body">
@@ -96,6 +99,8 @@ export default function MentionsLegales() {
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapse3"
+                  aria-expanded="false"
+                  aria-controls="collapse3"
                 >
                   Crédits
                 </button>
@@ -103,6 +108,7 @@ export default function MentionsLegales() {
               <div
                 id="collapse3"
                 className="accordion-collapse collapse"
+                aria-labelledby="heading3"
                 data-bs-parent="#accordionMentions"
               >
                 <div className="accordion-body">
