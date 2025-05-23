@@ -74,3 +74,23 @@ Cyril Hussong
 Étudiant développeur web  
 Projet réalisé dans le cadre d’un devoir React & Bootstrap
 
+## 🚀 Comment lancer le projet
+
+### 1. Cloner le dépôt
+
+```bash
+git clone https://github.com/cyrilhussong/optimiser-cv.git
+cd optimiser-cv 
+
+
+2. Installer les dépendances
+
+npm install
+
+ Lancer le projet en mode développement
+
+npm start
+
+Construire la version de production
+
+npm run build
