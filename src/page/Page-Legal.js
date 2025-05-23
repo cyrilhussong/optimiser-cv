@@ -57,7 +57,13 @@ export default function MentionsLegales() {
                 data-bs-parent="#accordionMentions"
               >
                 <div className="accordion-body">
-                  Ce site est édité par <strong>John Doe</strong>, étudiant au
+                  <h3>John Doe</h3>
+                  <p>40 Rue Laure Diebold<br />69009 Lyon, France</p>
+                <p>
+                    Téléphone : <a href="tel:0620304050">06 20 30 40 50</a>
+                </p>
+
+                   Ce site est édité par <strong>John Doe</strong>, étudiant au
                   CEF. Il s'agit d'un projet pédagogique.
                 </div>
               </div>

@@ -30,7 +30,7 @@ export default function Portfolio() {
             textShadow: '2px 2px 4px rgba(0,0,0,0.5)',
           }}
         >
-          <h1 className="display-4 text-center">Mes réalisations</h1>
+         {/*   <h1 className="display-4 text-center">Mes réalisations</h1>   */} 
         </div>
 
         {/* Portfolio Section */}
@@ -48,7 +48,7 @@ export default function Portfolio() {
                   <div className="card-body">
                     <h5 className="card-title">Fresh Food</h5>
                     <p className="card-text">Réalisation d’un site avec commande en ligne.</p>
-                    <Link to="/fresh-food" className="btn btn-outline-primary btn-sm">Voir</Link>
+                    <Link to="#" className="btn btn-outline-primary btn-sm">Voir</Link>
                   </div>
                   <div className="card-footer text-muted small">Site réalisé avec PHP et MySQL</div>
                 </div>
@@ -61,7 +61,7 @@ export default function Portfolio() {
                   <div className="card-body">
                     <h5 className="card-title">Restaurant Akira</h5>
                     <p className="card-text">Réalisation d’un site vitrine.</p>
-                    <Link to="/restaurant-akira" className="btn btn-outline-primary btn-sm">Voir</Link>
+                    <Link to="#" className="btn btn-outline-primary btn-sm">Voir</Link>
                   </div>
                   <div className="card-footer text-muted small">Site réalisé avec WordPress</div>
                 </div>
@@ -74,7 +74,7 @@ export default function Portfolio() {
                   <div className="card-body">
                     <h5 className="card-title">Espace bien-être</h5>
                     <p className="card-text">Réalisation d’un site vitrine pour un praticien de bien-être.</p>
-                    <Link to="/espace-bien-etre" className="btn btn-outline-primary btn-sm">Voir</Link>
+                    <Link to="#" className="btn btn-outline-primary btn-sm">Voir</Link>
                   </div>
                   <div className="card-footer text-muted small">Site réalisé en HTML/CSS</div>
                 </div>

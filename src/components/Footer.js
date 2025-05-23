@@ -68,9 +68,9 @@ const Footer = () => {
           <div className="col-md-3">
             <h6>Mes dernières réalisations</h6>
             <ul className="list-unstyled">
-              <li><Link to="/fresh-food" className="text-white text-decoration-none">Fresh food</Link></li>
-              <li><Link to="/restaurant-akira" className="text-white text-decoration-none">Restaurant Akira</Link></li>
-              <li><Link to="/espace-bien-etre" className="text-white text-decoration-none">Espace bien-être</Link></li>
+              <li><Link to="#" className="text-white text-decoration-none">Fresh food</Link></li>
+              <li><Link to="#" className="text-white text-decoration-none">Restaurant Akira</Link></li>
+              <li><Link to="#" className="text-white text-decoration-none">Espace bien-être</Link></li>
             </ul>
           </div>
 
@@ -78,9 +78,9 @@ const Footer = () => {
           <div className="col-md-3">
             <h6>Mes derniers articles</h6>
             <ul className="list-unstyled">
-              <li><Link to="/coder-son-site" className="text-white text-decoration-none">Coder son site en HTML/CSS</Link></li>
-              <li><Link to="/vendre-ses-produits" className="text-white text-decoration-none">Vendre ses produits sur le web</Link></li>
-              <li><Link to="/se-positionner-sur-google" className="text-white text-decoration-none">Se positionner sur Google</Link></li>
+              <li><Link to="#" className="text-white text-decoration-none">Coder son site en HTML/CSS</Link></li>
+              <li><Link to="#" className="text-white text-decoration-none">Vendre ses produits sur le web</Link></li>
+              <li><Link to="#" className="text-white text-decoration-none">Se positionner sur Google</Link></li>
             </ul>
           </div>
         </div>

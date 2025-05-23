@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Portfolio() {
   return (
@@ -11,6 +11,7 @@ export default function Portfolio() {
           name="description"
           content="Découvrez mon portfolio, mes compétences et les services que je propose en développement web, UX design et référencement SEO."
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -18,6 +19,13 @@ export default function Portfolio() {
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
+        <style>{`
+          @media (max-width: 576px) {
+            .banner-text h1 {
+              font-size: 2rem !important;
+            }
+          }
+        `}</style>
       </Helmet>
 
       {/* Banner Section */}
@@ -30,11 +38,15 @@ export default function Portfolio() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          padding: "0 15px",
+          textAlign: "center",
           color: "white",
           textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
         }}
       >
-        <h1 className="display-4">Bienvenue sur mon portfolio</h1>
+        <div className="w-100 banner-text">
+          {/*   <h1 className="display-4">Bienvenue sur mon portfolio</h1>  */}
+        </div>
       </div>
 
       {/* Services Section */}
@@ -60,7 +72,7 @@ export default function Portfolio() {
           />
 
           <div className="row g-4 justify-content-center">
-            {/* UX DESIGN Service */}
+            {/* UX DESIGN */}
             <div className="col-md-4">
               <div className="bg-white rounded shadow p-4 h-100">
                 <i className="fas fa-desktop fa-2x mb-3 text-primary"></i>
@@ -73,7 +85,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/* Développement Web Service */}
+            {/* DÉVELOPPEMENT WEB */}
             <div className="col-md-4">
               <div className="bg-white rounded shadow p-4 h-100">
                 <i className="fas fa-code fa-2x mb-3 text-primary"></i>
@@ -85,7 +97,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/* Référencement Service */}
+            {/* RÉFÉRENCEMENT */}
             <div className="col-md-4">
               <div className="bg-white rounded shadow p-4 h-100">
                 <i className="fas fa-search fa-2x mb-3 text-primary"></i>

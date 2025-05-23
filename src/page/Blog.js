@@ -31,7 +31,7 @@ const articles = [
   {
     title: 'Apprendre à coder facilement',
     date: '12 juillet 2022',
-    image: 'hero-bg.jpg',
+    image: 'img.blog.jpg',
   },
 ];
 
@@ -47,7 +47,7 @@ export default function Blog() {
       </Helmet>
 
       <div>
-        {/* Banner */}
+        {/* Bannière */}
         <div
           style={{
             backgroundImage: `url(${process.env.PUBLIC_URL}/banner.jpg)`,
@@ -61,16 +61,16 @@ export default function Blog() {
             textShadow: '2px 2px 4px rgba(0,0,0,0.5)',
           }}
         >
-          <h1 className="display-4">Bienvenue sur mon Blog</h1>
+         {/*  <h1 className="display-4">Bienvenue sur mon Blog</h1>  */}
         </div>
 
-        {/* Blog header */}
+        {/* En-tête du blog */}
         <div className="container text-center mt-5 mb-4">
           <h2>BLOG</h2>
           <p>Retrouvez ici quelques articles sur le développement web.</p>
         </div>
 
-        {/* Blog Cards */}
+        {/* Cartes des articles */}
         <div className="container">
           <div className="row">
             {articles.map((article, index) => (
@@ -84,7 +84,14 @@ export default function Blog() {
                   <div className="card-body d-flex flex-column">
                     <h5 className="card-title">{article.title}</h5>
                     <p className="card-text text-muted">Publié le {article.date}</p>
-                    <a href="#" className="btn btn-primary mt-auto">Lire la suite</a>
+                    {/* Remplacement du <a href="#"> par un <button> accessible */}
+                    <button
+                      className="btn btn-primary mt-auto"
+                      onClick={() => alert(`Lire la suite de : ${article.title}`)}
+                      type="button"
+                    >
+                      Lire la suite
+                    </button>
                   </div>
                 </div>
               </div>
