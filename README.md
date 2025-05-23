@@ -76,6 +76,13 @@ Projet réalisé dans le cadre d’un devoir React & Bootstrap
 
 ## 🚀 Comment lancer le projet
 
+
+## Validation W3C
+Voici les captures d’écran des résultats des validateurs W3C pour le code HTML et CSS :  
+![Validation HTML](public/w3c.css.verification.jpg)  
+![Validation CSS](public/w3c.validation.jpg)
+
+
 ### 1. Cloner le dépôt
 
 ```bash
